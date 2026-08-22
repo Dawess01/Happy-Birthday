@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Oscar!</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Confetti JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <main class="card">
@@ -17,12 +19,23 @@
         </header>
 
         <section class="message">
-            <p>Have a great day! - From Samuel</p>
+            <p>Happy birthday, Oscar! Have a good day! - From Samuel</p>
         </section>
 
         <footer>
-            <p>Enjoy your day!</p>
+            <p>Enjoy your special day!</p>
         </footer>
     </main>
+
+    <!-- Script to trigger confetti automatically on load -->
+    <script>
+        window.onload = function() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        };
+    </script>
 </body>
 </html>
