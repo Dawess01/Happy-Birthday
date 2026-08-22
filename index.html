@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Party Hat Image -->
+        <div class="image-container">
+            <img src="images/birthdaypartyhat.png" alt="" class="party-hat">
+        </div>
+
+        <!-- Header -->
+        <header>
+            <h1>Happy Birthday, Oscar.</h1>
+            <p class="subtitle">Hope you have a great day.</p>
+        </header>
+
+        <!-- Message -->
+        <section class="message">
+            <p>
+                [Write a normal, genuine message here. Keep it straightforward and personal without any forced excitement or filler text.]
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>From [Your Name]</p>
+        </footer>
+    </div>
+
+    <!-- Side-burst confetti on load -->
+    <script>
+        window.addEventListener('load', () => {
+            // Center subtle burst
+            confetti({
+                particleCount: 50,
+                spread: 60,
+                origin: { y: 0.6 },
+                colors: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd']
+            });
+
+            // Left side burst
+            setTimeout(() => {
+                confetti({
+                    particleCount: 40,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0, y: 0.7 },
+                    colors: ['#2563eb', '#60a5fa']
+                });
+            }, 200);
+
+            // Right side burst
+            setTimeout(() => {
+                confetti({
+                    particleCount: 40,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1, y: 0.7 },
+                    colors: ['#3b82f6', '#93c5fd']
+                });
+            }, 350);
+        });
+    </script>
+</body>
+</html>
