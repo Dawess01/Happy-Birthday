@@ -1,11 +1,7 @@
-/* Clean, Modern Styling with a Messaging-App Style Pattern Background */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    /* Soft light blue base background */
-    background-color: #f0f7ff;
-    /* Repeating subtle vector doodle pattern reminiscent of a chat wallpaper */
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23bae6fd' fill-opacity='0.35' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-    color: #0f172a;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -14,65 +10,38 @@ body {
 }
 
 .card {
-    background: #ffffff;
-    padding: 48px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-    max-width: 440px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
     width: 90%;
-    border: 1px solid #cbd5e1;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Subtle hover effect to make the card feel interactive */
-.card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.08), 0 10px 12px -6px rgba(0, 0, 0, 0.06);
+.image-container img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.image-container {
-    margin-bottom: 24px;
-}
-
-.party-hat {
-    width: 44px;
-    height: 44px;
-    object-fit: contain;
-}
-
-header h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0 0 6px 0;
-    color: #0f172a;
-    letter-spacing: -0.025em;
-}
-
-.subtitle {
-    color: #64748b;
-    font-size: 0.95rem;
-    margin: 0 0 32px 0;
-}
-
-.message {
-    margin-bottom: 32px;
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
 
 .message p {
-    font-size: 0.95rem;
-    line-height: 1.65;
-    color: #334155;
-    margin: 0;
-}
-
-footer {
-    border-top: 1px solid #f1f5f9;
-    padding-top: 20px;
+    font-size: 16px;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 footer p {
-    font-size: 0.85rem;
+    font-size: 14px;
     color: #94a3b8;
-    margin: 0;
+    font-weight: 500;
 }
