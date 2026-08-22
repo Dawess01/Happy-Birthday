@@ -3,70 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Happy Birthday Oscar!</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Confetti Library -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-
-    <div class="card">
-        <!-- Party Hat Image -->
+    <main class="card">
         <div class="image-container">
-            <img src="images/birthdaypngremovebg.png" alt="" class="party-hat">
+            <!-- Replace 'party-hat.png' with your actual image path if needed -->
+            <img src="party-hat.png" alt="Party Hat" class="party-hat">
         </div>
-
-        <!-- Header -->
+        
         <header>
-            <h1>Happy Birthday, Oscar.</h1>
+            <h1>Happy Birthday, Oscar!</h1>
+            <p class="subtitle">Wishing you an awesome day!</p>
         </header>
 
-        <!-- Message -->
         <section class="message">
-            <p>
-                Happy birthday Oscar! Hope you have a good day 
-            </p>
+            <p>Hope you have a fantastic birthday filled with great food, good times, and an amazing year ahead!</p>
         </section>
 
-        <!-- Footer -->
         <footer>
-            <p>From Samuel</p>
+            <p>Enjoy your special day!</p>
+            <p class="github-container">
+                <a href="https://github.com/Dawess01" target="_blank" class="github-link">View my other HTML projects on GitHub</a>
+            </p>
         </footer>
-    </div>
-
-    <!-- Side-burst confetti on load -->
-    <script>
-        window.addEventListener('load', () => {
-            // Center subtle burst
-            confetti({
-                particleCount: 50,
-                spread: 60,
-                origin: { y: 0.6 },
-                colors: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd']
-            });
-
-            // Left side burst
-            setTimeout(() => {
-                confetti({
-                    particleCount: 40,
-                    angle: 60,
-                    spread: 55,
-                    origin: { x: 0, y: 0.7 },
-                    colors: ['#2563eb', '#60a5fa']
-                });
-            }, 200);
-
-            // Right side burst
-            setTimeout(() => {
-                confetti({
-                    particleCount: 40,
-                    angle: 120,
-                    spread: 55,
-                    origin: { x: 1, y: 0.7 },
-                    colors: ['#3b82f6', '#93c5fd']
-                });
-            }, 350);
-        });
-    </script>
+    </main>
 </body>
 </html>
